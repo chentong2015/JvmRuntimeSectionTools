@@ -2,11 +2,11 @@ package runtime_api;
 
 import java.util.Scanner;
 
-// TODO. Runtime.getRuntime()为java程序提供运行时相关的API
-// - 查看程序运行时系统信息      Runtime.getRuntime().totalMemory();
-// - 主动调用gc(可能被忽略)      Runtime.getRuntime().gc();
-// - 调用其他exe程序或者脚本执行  Runtime.getRuntime().exec(cmd2)
-// - 为程序设置shutdown hook    Runtime.getRuntime().addShutdownHook()
+// TODO. Runtime.getRuntime() Java程序运行时API操作
+// - 查看程序运行时系统信息     Runtime.getRuntime().totalMemory();
+// - 主动调用gc(可能被忽略)     Runtime.getRuntime().gc();
+// - 调用exe程序或者脚本执行    Runtime.getRuntime().exec(cmd2)
+// - 为程序设置shutdown hook   Runtime.getRuntime().addShutdownHook()
 public class JavaRuntimeAPIs {
 
     // TODO. 处理器数量决定JVM最大的并发Threads线程数量
