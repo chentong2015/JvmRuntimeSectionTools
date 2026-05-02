@@ -1,0 +1,8 @@
+Jstack+PID 打印当前线程的快照信息，分析线程问题
+> printf "%x\n" 21889 (10进制转16进制)
+> jstack PID (10进制)
+  jstack [-l][-e] PID
+  -l  long listing. Prints additional information about locks
+  -e  extended listing. Prints additional information about threads
+  Prints the stack traces of all java threads for a given process or core dump.
+  Each thread consists of a header and a stack trace
