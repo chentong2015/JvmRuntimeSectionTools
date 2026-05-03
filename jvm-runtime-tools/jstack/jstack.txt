@@ -6,3 +6,10 @@ Jstack+PID 打印当前线程的快照信息，分析线程问题
   -e  extended listing. Prints additional information about threads
   Prints the stack traces of all java threads for a given process or core dump.
   Each thread consists of a header and a stack trace
+
+
+jstack查看线程栈: 调用LockSupport.park后线程处于WAITING的状态
+"Thread-1" #12 prio=5 os_prio=0 tid=0x00007f8a6800a800 nid=0x5166 waiting on condition [0x00007f8a6012e000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
